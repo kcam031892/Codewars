@@ -1,0 +1,8 @@
+# March 23
+
+## TODOS
+
+- [x] <https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript> getMiddle
+- [x] <https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript> disemvowel
+- [ ] <https://www.codewars.com/kata/546e2562b03326a88e000020> squareDigits
+- [ ] <https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript> likes

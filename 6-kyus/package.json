@@ -1,0 +1,12 @@
+{
+  "name": "6-kyus",
+  "version": "1.0.0",
+  "description": "- [ ] <https://www.codewars.com/kata/5c1ae703ba76f438530000a2/train/javascript>",
+  "main": "passphare.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
