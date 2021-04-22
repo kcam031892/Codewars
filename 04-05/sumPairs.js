@@ -31,7 +31,7 @@ function sumPairs(ints, s) {
     console.log(num);
     console.log(s - num);
     if (seen[s - num]) {
-      console.log(s - num, num);
+      return [s - num, num];
     }
     seen[num] = true;
   }
