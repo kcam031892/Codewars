@@ -6,56 +6,37 @@
 // use the bigger chocolates to achieve the goal
 // can use smaller also
 function makeChocolates(small, big, goal) {
-  // make a variable computedBig and store big * 5
-  // make a variable computedSmall and store small * 2
-  // make a variable total = 0
-  let total = 0;
-
-  while (big > 0) {
-    // const rem = total % big;
-    // if (rem > 2) {
-    // }
-    total += 5;
+  let target = goal;
+  let used = 0;
+  while (big > 0 && target >= 5) {
+    target -= 5;
     big--;
   }
-  console.log(total);
-  if (total === goal) {
-    return big;
+
+  if (target % 2 == 1) {
+    target = goal;
   }
-  let usedSmall = 0;
+
   while (small > 0) {
-    total += 2;
-    usedSmall++;
+    target -= 2;
     small--;
-  }
-  console.log(total);
-
-  if (total === goal) {
-    return usedSmall;
-  } else {
-    return -1;
+    used++;
+    if (target === 0) return used;
   }
 
-  // while big is not 0
-  // big divide goal and get the remainder
-  // if remainder is greater than 2
-  // add to total
-
-  // if total !== goal
-
-  // while small is not 0 and total is not goal
-  // add small to total
-
-  // if total === goal return small
-  // otherwise return -1
+  if (target !== 0) return -1;
 }
 
-// 4 * 2 = 8
+// target = 13
 // 5 * 1 = 5
+// 1 * 2 = 7
+// 1 * 2 = 9
+// 1 * 2 = 11
+// 1 * 2 = 13
 
-console.log(makeChocolates(4, 1, 13), 4);
-console.log(makeChocolates(4, 1, 14), -1);
-console.log(makeChocolates(2, 1, 7), 1);
-console.log(makeChocolates(3, 1, 6), 3);
-console.log(makeChocolates(8, 0, 7), -1);
-console.log(makeChocolates(8, 0, 7), -1);
+// console.log(makeChocolates(58, 156, 283), 4);
+// console.log(makeChocolates(58, 155, 281), -1);
+// console.log(makeChocolates(2, 1, 7), 1);
+// console.log(makeChocolates(3, 1, 6), 3);
+// console.log(makeChocolates(8, 0, 7), -1);
+console.log(makeChocolates(0, 1, 5), -1);

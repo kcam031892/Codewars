@@ -3,7 +3,6 @@ function firstNSmallest(array, n) {
   const sorted = array.slice();
   sorted.sort((a, b) => a - b);
   const smallest = [];
-  // const sorted = [...array].sort((a, b) => a - b);
   for (let i = 0; i < sorted.length && i < n; i++) {
     smallest.push(sorted[i]);
   }
@@ -25,27 +24,12 @@ function firstNSmallest(array, n) {
   return result;
   // return the array
 }
-// function firstNSmallest(array, n) {
-//   var a = array.slice();
-//   var small = [];
-//   var result = [];
-
-//   a.sort((a, b) => a - b);
-
-//   for (var i = 0; i < a.length && i < n; i++) {
-//     small.push(a[i]);
-//   }
-//   console.log(small);
-
-//   for (var i = 0; i < array.length; i++) {
-//     if (small.includes(array[i])) {
-//       result.push(array[i]);
-//       small.splice(small.indexOf(array[i]), 1);
-//     }
-//   }
-
-//   return result;
-// }
+function firstNSmallest(array, n) {
+  while (array.length !== n) {
+    array.splice(array.lastIndexOf(Math.max(...array)), 1);
+  }
+  return array;
+}
 
 console.log(firstNSmallest([1, 2, 3, 4, 5], 3), [1, 2, 3]);
 // console.log(firstNSmallest([5, 3, 4, 3, 2, 1, 1], 4), [3, 2, 1, 1]);

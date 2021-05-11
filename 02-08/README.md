@@ -1,17 +1,7 @@
 # Feb 8
 
-- [x] 7 Kyu
-      event-and-odds
-      <https://www.codewars.com/kata/evens-and-odds>
+## TODOS
 
----
-
-- [] 6 Kyu
-  n-smallest-elements-in-original-order
-  <https://www.codewars.com/kata/n-smallest-elements-in-original-order>
-
----
-
-- [ ] 5 Kyu
-      buddy-pairs
-      <https://www.codewars.com/kata/buddy-pairs>
+- [x] <https://www.codewars.com/kata/evens-and-odds> [5kyu] even-and-odds
+- [x] <https://www.codewars.com/kata/n-smallest-elements-in-original-order> [6kyu] n-smallest-elements-in-original-order
+- [x] <https://www.codewars.com/kata/buddy-pairs> [5kyu] buddy-pairs

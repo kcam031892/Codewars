@@ -8,14 +8,6 @@ function palindrome(n) {
       return i;
     }
   });
-  // let arr = [];
-  // for (let i = 0; arr.length !== Math.floor(n / 2); i++) {
-  //   if (i.toString() === i.toString().split('').reverse().join('')) {
-  //     arr.push(i);
-  //   }
-  // }
-
-  // return arr.sort((a, b) => a - b);
   return temp;
 }
 console.log(palindrome(100));

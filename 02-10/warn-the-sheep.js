@@ -1,12 +1,14 @@
 function warnTheSheep(queue) {
-  if (queue[queue.length - 1] === 'wolf') {
-    return 'Pls go away and stop eating my sheep';
-  }
-  let rev = queue.length;
+  // reverse the queue.
+  queue.reverse();
+  // iterate through queue.
   for (let i = 0; i < queue.length; i++) {
-    rev--;
-    if (queue[i + 1] === 'sheep' && queue[i] === 'wolf') {
-      return `Oi! Sheep number ${rev}! You are about to be eaten by a wolf!`;
+    // if element is equal to wolf and index is equal to 0 'Pls go away and stop eating my sheep'
+    if (i === 0 && queue[i] === 'wolf') return 'Pls go away and stop eating my sheep';
+    // if the current element is equal to wolf
+    if (queue[i] === 'wolf') {
+      // and return Oi! Sheep number {i}! You are about to be eaten by a wolf!
+      return `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`;
     }
   }
 }

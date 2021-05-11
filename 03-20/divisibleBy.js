@@ -1,3 +1,20 @@
+
+function divisibleBy(numbers, divisor) {
+  // initialize a result as empty array
+  const result = [];
+  // iterate through number
+  for(let i = 0 ;i < numbers.length; i++) {
+    // if element mod divisor is equal to zero
+    if(numbers[i] % divisor === 0) {
+      // add element  to result.
+      result.push(numbers[i]);
+
+    }
+
+  }
+  // return the result.
+  return result;
+}
 function divisibleBy(numbers, divisor) {
   return numbers.filter((n) => n % divisor === 0);
 }

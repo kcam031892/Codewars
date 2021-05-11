@@ -1,4 +1,5 @@
 function stringToArray(string) {
+  // split the string and return.
   return string.split(' ');
 }
 

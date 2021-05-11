@@ -1,6 +1,6 @@
 function hero(bullets, dragons) {
-  const isSurvive = bullets / 2 >= dragons;
-  return isSurvive;
+  // divide the bullets to 2, if the total is greater or equal the dragon return true otherwise false.
+  return bullets / 2 >= dragons;
 }
 console.log(hero(10, 5), true);
 console.log(hero(7, 4), false);

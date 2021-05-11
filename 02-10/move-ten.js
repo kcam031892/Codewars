@@ -1,4 +1,24 @@
 function moveTen(s) {
+  // initialize a variable result
+  let result = '';
+  // iterate through s
+  for (const char of s) {
+    // get the character code of the character and store it to charCode
+    const charCode = char.charCodeAt(0);
+    // add 10 to charCode and store it to newCharCode
+    let newCode = charCode + 10;
+    // if newCharCode is greater than 122
+    if (newCode > 122) {
+      // subtract newCode to 122 and add 96
+      newCode = newCode - 122 + 96;
+    }
+    // convert it back to string and push it to the result.
+    result += String.fromCharCode(newCode);
+  }
+  // return result.
+  return result;
+}
+function moveTen(s) {
   // create variable result
   let result = '';
   // iterate each s
