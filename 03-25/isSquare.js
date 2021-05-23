@@ -1,5 +1,7 @@
 var isSquare = function (n) {
-  return Math.sqrt(n) % 1 === 0 ? true : false;
+  // Get the square root of n
+  // if the square root of n mod 1 is equal to 0 return true otherwise return false.
+  return Math.sqrt(n) % 1 === 0;
 };
 
 console.log(isSquare(-1), false, '-1: Negative numbers cannot be square numbers');

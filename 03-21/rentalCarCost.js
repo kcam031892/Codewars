@@ -1,4 +1,23 @@
 function rentalCarCost(d) {
+  // get the price of rent.
+  let price = 40 * d;
+  // if days is equal or greater than 7
+  if (d >= 7) {
+    // return price - 50
+    price = price - 50;
+    return price;
+    // if days is equal or greater than 3
+  } else if (d >= 3 && d <= 7) {
+    // return price - 50
+    price = price - 20;
+    return price;
+    // otherwise
+  } else {
+    // return price
+    return price;
+  }
+}
+function rentalCarCost(d) {
   let price = 40 * d;
   return d >= 7 ? price - 50 : d >= 3 && d <= 7 ? price - 20 : price;
 }

@@ -1,7 +1,7 @@
 # Codewars
 
 - 💻 This is all I solved in CodeWars.
-- 🔗 [CodeWars Profile](https://www.codewars.com/users/kcam031892) .
+- 🔗 [CodeWars Profile](https://www.codewars.com/users/kcam031892)
 
 Language used.
 

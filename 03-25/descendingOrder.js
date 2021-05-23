@@ -1,4 +1,6 @@
 function descendingOrder(n) {
+  // convert n to array
+  //  
   return Number(
     n
       .toString()
@@ -6,6 +8,14 @@ function descendingOrder(n) {
       .sort((a, b) => b - a)
       .join('')
   );
+}
+function descendingOrder(n) {
+  // convert n to array.
+  //  sort it.
+  // then join.
+  // return as Number.
+  return Number([...String(n)].sort((a,b) => b - a).join(''))
+
 }
 console.log(descendingOrder(0), 0);
 console.log(descendingOrder(1), 1);

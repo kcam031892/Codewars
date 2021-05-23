@@ -1,6 +1,9 @@
 function getMiddle(s) {
-  console.log(Math.ceil(s.length / 2));
-
+  // Get the middle of the string.
+  // if length of the string is even
+  // return the 2 middle character.
+  // otherwise
+  // return the middle.
   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
 }
 

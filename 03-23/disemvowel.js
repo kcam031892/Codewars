@@ -5,6 +5,9 @@ function disemvowel(str) {
     .join('');
 }
 function disemvowel(str) {
+  // get all the vowels in the string.
+  // replace it to empty.
+  // return the string.
   return str.replace(/[aeiou]/gi, '');
 }
 

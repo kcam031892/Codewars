@@ -1,22 +1,22 @@
 function dateNbDays(a0, a, p) {
   const interest = p / 36000;
-  console.log(interest);
-  const daily = a0 * interest;
-
   let days = 0;
-  for (let i = a0; i <= a; i = i + daily) {
-    console.log(i);
+  let startingMoney = a0;
+  while (startingMoney <= a) {
     days++;
+    startingMoney += startingMoney * interest;
   }
   console.log(days);
   const date = new Date('2016-01-01');
   const newDate = date.getTime() + days * 24 * 60 * 60 * 1000;
-  console.log(new Date(newDate));
-  return newDate;
+  const returnDate = new Date(newDate).toISOString().slice(0, 10);
+  return returnDate;
 }
 
+console.log(Math.log(100));
+
 console.log(dateNbDays(100, 101, 0.98), '2024-07-03');
-// console.log(dateNbDays(4620, 5188, 2), '2021-09-19');
+// console.log(dateNbDays(100, 150, 2.0), '2021-09-19');
 // console.log(dateNbDays(9999, 11427, 6), '2018-03-13');
 // console.log(dateNbDays(3525, 4822, 3), '2026-04-18');
 // console.log(dateNbDays(5923, 6465, 6), '2017-06-10');

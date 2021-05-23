@@ -1,9 +1,14 @@
+// initialize class Point.
 class Point {
+  // initialize a constructor that accepts x,y
   constructor(x, y) {
+    // set property of x to parameter of x
     this.x = x;
+    // set property of y to parameter of y
     this.y = y;
   }
 }
+// calculate the distance between 2 points
 function distanceBetweenPoints(a, b) {
   let d = Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2);
   return Math.sqrt(d);

@@ -5,8 +5,38 @@
 // then length of roll 10m.
 // he wants to add a length of 15%.
 // output how many rolls he should buy.
+const numbers = [
+  'zero',
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
+  'ten',
+  'eleven',
+  'twelve',
+  'thirteen',
+  'fourteen',
+  'fifteen',
+  'sixteen',
+  'seventeen',
+  'eighteen',
+  'nineteen',
+  'twenty'
+];
 function wallpaper(l, w, h) {
-  return w * h + l;
+  // if l is equal to 0 or w is equal 0 or h is equal to zero return 'zero'
+  if (l === 0 || w === 0 || h === 0) return 'zero';
+
+  const rollWidth = 0.52;
+  const rollLength = 10;
+  const rollSize = rollWidth * rollLength;
+
+  return numbers[Math.ceil(((2 * (h * w + h * l)) / rollSize) * 1.15)];
 }
 
 console.log(wallpaper(6.3, 4.5, 3.29), 'sixteen');

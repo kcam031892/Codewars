@@ -1,4 +1,5 @@
 const binaryArrayToNumber = (arr) => {
+  // join the array, convert it into binary and return it.
   return parseInt(arr.join(''), 2);
 };
 

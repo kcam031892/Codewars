@@ -1,4 +1,28 @@
 function findOdd(A) {
+  // initialize a variable map.
+  const map = {};
+  // iterate through array
+  for (const item of A) {
+    // if element is not in map
+    if (!map[item]) {
+      // add element in map
+      map[item] = 1;
+      // otherwise
+    } else {
+      // add value in map with key of element
+      map[item] = map[item] + 1;
+    }
+  }
+  // iterate through map
+  for (const key in map) {
+    // if value is even
+    if (map[key] % 2 === 1) {
+      // return key.
+      return Number(key);
+    }
+  }
+}
+function findOdd(A) {
   const obj = A.reduce((a, b) => {
     a[b] = a[b] + 1 || 1;
     return a;
