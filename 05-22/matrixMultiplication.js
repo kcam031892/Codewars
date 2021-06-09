@@ -1,8 +1,6 @@
 function matrixMultiplication(a, b){
-
   const x = rotateMatrixB(b)
   console.log(x);
-
 
   /*
       [2,1]
